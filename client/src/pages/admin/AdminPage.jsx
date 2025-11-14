@@ -48,15 +48,14 @@ function AdminPage({ onBack, onProductRegister, onProductManage, onOrderManage, 
       if (result.success && result.data) {
         // 주문 데이터를 AdminPage 형식으로 변환
         const formattedOrders = result.data.map(order => ({
-            id: order.orderNumber || order._id,
-            customer: order.user?.name || order.recipientName || '알 수 없음',
-            date: formatDate(order.createdAt),
-            status: getStatusKorean(order.status),
-            statusKey: order.status,
-            amount: order.totalAmount || 0
-          }));
-          setRecentOrders(formattedOrders);
-        }
+          id: order.orderNumber || order._id,
+          customer: order.user?.name || order.recipientName || '알 수 없음',
+          date: formatDate(order.createdAt),
+          status: getStatusKorean(order.status),
+          statusKey: order.status,
+          amount: order.totalAmount || 0
+        }));
+        setRecentOrders(formattedOrders);
       }
     } catch (error) {
       console.error('최근 주문 조회 오류:', error);
