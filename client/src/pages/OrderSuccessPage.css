@@ -1,0 +1,289 @@
+.order-success-page {
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.order-success-main {
+  padding: 48px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+}
+
+.order-success-container {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  padding: 64px 48px;
+  text-align: center;
+  width: 100%;
+}
+
+.success-icon {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+}
+
+.success-message {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+
+.success-submessage {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin: 0 0 40px 0;
+}
+
+.order-info {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.order-info-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 16px 0;
+}
+
+.order-status-badge-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.order-status-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.order-status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.order-status-badge.confirmed {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.order-status-badge.processing {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.order-status-badge.shipped {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.order-status-badge.delivered {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.order-status-badge.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 1rem;
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.success-actions {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.primary-button {
+  padding: 16px 48px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.primary-button:hover {
+  background: #374151;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(17, 24, 39, 0.2);
+}
+
+.view-orders-button {
+  background: #fff !important;
+  color: #111827 !important;
+  border: 2px solid #111827 !important;
+  min-width: 160px;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.view-orders-button:hover {
+  background: #111827;
+  color: #fff;
+}
+
+.continue-shopping-button {
+  min-width: 160px;
+}
+
+/* 다음 단계 섹션 */
+.next-steps {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.next-steps-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.step-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 4px 0;
+}
+
+.step-content p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 문의사항 섹션 */
+.contact-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0 0 12px 0;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.contact-info p {
+  margin: 4px 0;
+}
+
+.auto-redirect {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .order-success-container {
+    padding: 48px 24px;
+  }
+
+  .success-title {
+    font-size: 1.5rem;
+  }
+
+  .success-message {
+    font-size: 1rem;
+  }
+}
+
